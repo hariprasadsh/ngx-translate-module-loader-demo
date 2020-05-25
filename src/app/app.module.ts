@@ -16,8 +16,8 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
       console.log("Oeps! an error occurred: ", { error, path });
     },
     modules: [
-      // final url: ./assets/i18n/en.json
-      { baseTranslateUrl },
+      // final url: ./assets/i18n/common/en.json
+      { moduleName:'common', baseTranslateUrl },
       // final url: ./assets/i18n/feature1/en.json
       { moduleName: "feature1", baseTranslateUrl },
       // final url: ./assets/i18n/feature2/en.json

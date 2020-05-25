@@ -7,11 +7,11 @@ import { switchMap } from 'rxjs/operators';
   template: `
     <main>    
     
-      <h2>{{ 'TITLE' | translate }}</h2>
+      <h2>{{ 'COMMON.TITLE' | translate }}</h2>
 
      <div>
       <label>
-        {{ 'CHANGE_LANGUAGE' | translate }}
+        {{ 'COMMON.CHANGE_LANGUAGE' | translate }}
         <select #langSelect (change)="translate.use(langSelect.value)">
           <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option> 
         </select>
